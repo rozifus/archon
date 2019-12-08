@@ -30,5 +30,28 @@ Use `media` string to select whether to trigger download of ('v')video-with-audi
 ]
 
 ```
+
+## Run Archon
+
+```
 python archon.py
 ```
+
+# Purge Duplicates
+
+Removes older versions of video files that have the same name and almost identical file sizes
+
+## Setup
+
+```
+pip install pymediainfo
+pip install recordtype
+```
+
+## Run Purge Duplicates
+
+```
+python purge-duplicates.py
+```
+
+
