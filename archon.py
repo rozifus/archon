@@ -32,7 +32,7 @@ def download_audio():
     for source, alias, options in config.youtube:
         if alias == None:
             alias = source
-            source = 'ytuser:' + username
+            source = 'ytuser:' + source
 
         if 'a' in options.lower():
             opts = global_opts.copy()
@@ -45,7 +45,7 @@ def download_video():
     for source, alias, options in config.youtube:
         if alias == None:
             alias = source
-            source = 'ytuser:' + username
+            source = 'ytuser:' + source
 
         if 'v' in options.lower():
             opts = global_opts.copy()
